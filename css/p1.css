@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+*{margin: 0; padding: 0;font-family: 'Noto Sans KR', sans-serif;}
+
+
+header {z-index: 9999; position:fixed; width:100vw; background-color: rgba(230, 230, 230, 0.438); min-width: 200px;height: 80px;}
+header > h1{float: left; margin: 20px 0 0 60px; font-size: 30px; color:#3372B1 ; line-height: 40px;}
+
+header > nav > ul{float: right; padding-right: 60px; margin-top: 30px;}
+header > nav > ul > li{display:inline; margin-right:30px;}
+header > nav > ul > li > a{font-size: 18px; font-weight: 700; text-decoration:none; color:rgb(80, 80, 80); }
+header > nav > ul > li > a:hover {color:#3372B1;}
+
+section > article.visual-area {
+    background-image:url('../img/p1_BG.png');height:867px;
+    background-position:center;background-repeat:no-repeat;background-size:cover;
+}
+section > article.visual-area > h1 {color:#111; width:330px; padding:260px 0 0 120px;font-size:100px;}
+
+section > article.intro-area{width: 800px; height: 800px; margin: 0 auto; text-align: center;}
+section > article.intro-area > h2 {font-size: 18px; padding: 50px 0;}
+section > article.intro-area > p{font-size: 16px; line-height: 20px; text-align: left;}
+
+section > article.summary-area {background-color:#d3d3d3; height:500px;}
+section > article.summary-area > div {margin:0 auto; width:900px; height:503px; position:relative;}
+section > article.summary-area > div > div {position:absolute; left: 0; bottom:80px;}
+section > article.summary-area > div > div > img {vertical-align:bottom; text-align: center;}
+section > article.summary-area > div > div > img.img-ui {margin-right:0px;}
+
+section > article.braun{position: relative;}
+section > article.braun > div.text{float: left; width: 420px; margin:20px 0 0 300px;}
+section > article.braun > div.text > h2{font-size: 18px;}
+section > article.braun > div.text > p{font-size: 14px; padding-top: 40px;}
+section > article.braun > div.braunimg{position: absolute; top: -150px; right: 0;}
+
+
+section > article.text-area {background-color:#f4f8fb; text-align:center;}
+section > article.text-area > ul {width:1200px; display:inline-block; margin: 300px auto;}
+section > article.text-area > ul > h1{font-size: 50px;}
+section > article.text-area > ul > li {list-style-type:none; float:left; width:210px; text-align:center;}
+section > article.text-area > ul > li:nth-child(4) {padding:0 30px;}
+section > article.text-area > ul > li:nth-child(6) {padding:0 30px;}
+section > article.text-area > ul > li:nth-child(9) {padding:0 30px;}
+section > article.text-area > ul > li:nth-child(11) {padding:0 30px;}
+
+section > article.text-area > ul > li > h2 {color:#2b303b; font-size:16px; line-height:20px; padding-top:80px;}
+section > article.text-area > ul > li > p {color:#44484f; font-size:14px; line-height:20px; padding:30px 0 ;}
+
+section > article.jony-area{width: 800px; height: 500px; margin: 0 auto; text-align: center;}
+section > article.jony-area > h2 {font-size: 18px; padding: 50px 0;}
+section > article.jony-area > p{font-size: 16px; line-height: 20px; text-align: left;}
+
+section > article.less-area {position: relative; background-image:url('../img/lessbutbetter.png');height:110vh; background-position:center;background-repeat:no-repeat;background-size:cover;}
+
+section > article.less-area >div.text-box  { width: 500px; position: absolute; top: 40%; left: 20%;}
+section > article.less-area >div.text-box > h1 {font-size: 60px; padding-bottom: 50px;}
+section > article.less-area >div.text-box > p {font-size: 16px;}
+
+footer {background-color: #f7f7f7; padding: 100px 0; color: #8c8e90; text-align: center;}
+footer > ul {display: table; margin: 0 auto; width: 70%;}
+footer > ul > li {display: table-cell; width: 33.3333%;  list-style-type: none;  vertical-align: bottom}
+footer > ul > li > dl {margin-right: 24px; text-align: left;}
+footer > ul > li > dl > dt {font-size: 16px; margin-bottom: 2px; font-weight: 700;}
+footer > ul > li > dl > dd {font-size: 14px; font-style: italic; line-height: 20px;}
+footer > ul > li:nth-child(2) > img:nth-child(2){margin: 0 15px;}
+footer > ul > li:last-child {text-align: right;}
+footer > ul > li > p {display: inline-block; line-height: 36px; margin-right: 10px; font-style: italic;}
+
+
+
