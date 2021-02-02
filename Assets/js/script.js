@@ -7,7 +7,7 @@ window.addEventListener('load', function (e) {
 $(function () {
     console.log('jQuery Load')
 
-    // $('body').css({ 'touch-action': 'none', 'overflow': 'hidden' });
+    $('body').css({ 'touch-action': 'none', 'overflow': 'hidden', 'background-color': '#000' });
 
     $(".ham").click(function (e) {
         e.preventDefault();
