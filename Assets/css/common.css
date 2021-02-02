@@ -1,18 +1,18 @@
 @font-face{
 	font-family: 'ShinhanCard';
-	src: url('/Assets/font/ShinhanCardL.woff') format('woff');
+	src: url('../font/ShinhanCardL.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
 	font-family: 'ShinhanCard';
-	src: url('/Assets/font/ShinhanCardM.woff') format('woff');
+	src: url('../font/ShinhanCardM.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face{
 	font-family: 'ShinhanCard';
-	src: url('/Assets/font/ShinhanCardB.woff') format('woff');
+	src: url('../font/ShinhanCardB.woff') format('woff');
 	font-weight: 900;
 	font-style: normal;
 }
