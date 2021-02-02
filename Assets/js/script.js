@@ -1,9 +1,13 @@
 $(function () {
     console.log('jQuery Load')
+
     window.addEventListener('load', function (e) {
 
         setTimeout(scrollTo, 0, 0, 1);
     }, false);
+
+    $('body').css({ 'touch-action': 'none' });
+
     $(".ham").click(function (e) {
         e.preventDefault();
         $(this).toggleClass("active")
@@ -34,5 +38,42 @@ $(function () {
         e.preventDefault();
         $('div').remove('.popUp');
     })
+
+
+    $(document).on('touchstart', function (e, x) {
+        console.log(e.originalEvent.touches[0].pageY);
+        // x.stopPropagation();
+    })
+
+
+
+    $('.x').on('click', function () {
+        console.log('click');
+        $('.shinhan-ad').animate({ height: '-=100vh' }, 1500, 'easeInOutBack', function () {
+            $('div').remove('.shinhan-ad');
+            $('body').css({ 'padding-top': '100px', 'touch-action': 'auto' })
+            $('header').css({ 'position': 'fixed' })
+
+        });
+
+    });
+
+
+    var startX, startY, endX, endY;
+    $(".shinhan-ad").on('touchstart', function (event) {
+        startX = event.originalEvent.changedTouches[0].screenX;
+        startY = event.originalEvent.changedTouches[0].screenY;
+    });
+    $(".shinhan-ad").on('touchend', function (event) {
+        endX = event.originalEvent.changedTouches[0].screenX;
+        endY = event.originalEvent.changedTouches[0].screenY;
+        if (startY - endY > 50) {
+            $('.shinhan-ad').animate({ height: '-=100vh' }, 1500, 'easeInOutBack', function () {
+                $('div').remove('.shinhan-ad');
+                $('body').css({ 'padding-top': '100px', 'touch-action': 'auto' })
+                $('header').css({ 'position': 'fixed' })
+            });
+        }
+    });
 
 });

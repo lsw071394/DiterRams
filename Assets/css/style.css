@@ -1,7 +1,25 @@
-body{font-family: 'ShinhanCard'; padding-top: 100px;}
+body{font-family: 'ShinhanCard'; background-color: #000;
+     /* padding-top: 100px; */
+    }
+
+.shinhan-ad{position: relative; width: 100%; height: 100vh;  background-image: url(../images/Adver.png);
+background-size: 460px; background-position: center; background-repeat: no-repeat;}
+.shinhan-ad > .scroll-img{width: 50px; height: 50px; position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%);
+-webkit-animation: visibling 1.5s infinite linear;}
+.shinhan-ad > .scroll-img img{width: 100%;}
+@-webkit-keyframes visibling{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.x{position: absolute; top: 3%; right: 3%; cursor: pointer;}
+.x span{display: block;background: #fff;width: 20px;height: 2px;transition: all 0.25s ease-in;}
+.barx1{margin-top: 4px;margin-bottom: -2px;transform: rotate(45deg);}
+.barx2{margin-top: -2px;transform: rotate(135deg);}
 
 
-.inner-wrap{position: relative; width: 85.18%; margin: 0 auto;}
+
+.inner-wrap{position: relative; width: 85.18%; margin: 0 auto; }
 
 
 .title-wrap{float: left;}
@@ -10,7 +28,7 @@ body{font-family: 'ShinhanCard'; padding-top: 100px;}
 
 
 
-header{position: fixed; top: 0; left: 0; width: 100%; height: 100px; background-color: #292c35;  z-index: 2;}
+header{position: relative; top: 0; left: 0; width: 100%; height: 100px; background-color: #292c35;  z-index: 2; overflow: hidden;}
 header > .line{position: absolute; top: 50%; width: 100%; height: 1px; background-color: #000;}
 header > .inner-wrap{height: 100px;}
 header > .inner-wrap > .util_menu{height: 49%;  display: flex; align-items: center;}
@@ -43,7 +61,7 @@ header > .inner-wrap > .gnb > .swiper-container > .swiper-wrapper a.act{color:#9
 section.content{width: 100%; background-color: #f7f7f9;overflow-X: hidden;}
 
 
-.card{width: 100vw; height: 51%; display: flex; align-items: center;}
+.card{width: 100vw; height: 51%; display: flex; align-items: center; overflow: hidden;}
 .card .swiper-container{width: 100%;}
 .card .swiper-container > .swiper-wrapper > .swiper-slide{display: flex;
 align-items: center; width: max-content; margin-right: 10px;}
