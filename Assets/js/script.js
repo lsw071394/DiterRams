@@ -47,7 +47,7 @@ $(function () {
         console.log('click');
         $('.shinhan-ad').animate({ height: '-=100vh' }, 1500, 'easeInOutBack', function () {
             $('div').remove('.shinhan-ad');
-            $('body').css({ 'padding-top': '100px', 'touch-action': 'auto', 'overflow': 'auto' })
+            $('body').css({ 'padding-top': '100px', 'touch-action': 'auto', 'overflow': 'auto', 'background-color': '#fff' })
             $('header').css({ 'position': 'fixed' })
 
         });
@@ -66,7 +66,7 @@ $(function () {
         if (startY - endY > 50) {
             $('.shinhan-ad').animate({ height: '-=100vh' }, 1500, 'easeInOutBack', function () {
                 $('div').remove('.shinhan-ad');
-                $('body').css({ 'padding-top': '100px', 'touch-action': 'auto', 'overflow': 'auto' })
+                $('body').css({ 'padding-top': '100px', 'touch-action': 'auto', 'overflow': 'auto', 'background-color': '#fff' })
                 $('header').css({ 'position': 'fixed' })
             });
         }
