@@ -105,16 +105,17 @@ padding: 0 5%;}
 .benefits-area .benefits-box p{font-size: 12px; font-weight: 400;margin-top: 10px;}
 .benefits-area .benefits-box img{position: absolute; top: 70%; left: 50%; transform: translate(-50%,-50%); width: 50%;}
 
+.common-box-wrap{width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
+.finance-area .common-box{position: relative; width: 47%; height: 125px; background-color: #ebeaea; color: #000; padding: 5% 5%;}
+.common-box:nth-child(1){margin:0 15px 15px 0;}
+.common-box:nth-child(2){margin-bottom:15px;}
+.common-box:nth-child(3){margin-right: 15px;}
+.common-box h2{font-size: 14px; font-weight: 700; line-height: 20px;}
+.common-box p{font-size: 12px; font-weight: 400;margin-top: 10px;}
+.common-box img{position: absolute; bottom: 10%; right: 10%; width: 30%;}
 
-.finance-area .box-wrap{width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
-.finance-area .benefits-box{position: relative; width: 47%; height: 125px; background-color: #ebeaea; color: #000; padding: 5% 5%;}
-.benefits-box:nth-child(1){margin:0 15px 15px 0;}
-.benefits-box:nth-child(2){margin-bottom:15px;}
-.benefits-box:nth-child(3){margin-right: 15px;}
-.finance-area .benefits-box h2{font-size: 14px; font-weight: 700; line-height: 20px;}
-.finance-area .benefits-box p{font-size: 12px; font-weight: 400;margin-top: 10px;}
-.finance-area .benefits-box img{position: absolute; bottom: 10%; right: 10%; width: 30%;}
-
+.pay-area .common-box{position: relative; width: 47%; height: 125px; background-color: #fff; color: #000; padding: 5% 5%;}
+.car-area .common-box{position: relative; width: 47%; height: 125px; background-color: #3f424c; color: #fff; padding: 5% 5%;}
 
 
 

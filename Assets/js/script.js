@@ -41,11 +41,6 @@ $(function () {
     })
 
 
-    $(document).on('touchstart', function (e, x) {
-        console.log(e.originalEvent.touches[0].pageY);
-        // x.stopPropagation();
-    })
-
 
 
     $('.x').on('click', function () {
