@@ -1,9 +1,11 @@
 $(function () {
     console.log('jQuery Load')
-    window.addEventListener('load', function () {
+    window.addEventListener('load', function (e) {
+
         setTimeout(scrollTo, 0, 0, 1);
     }, false);
-    $(".ham").click(function () {
+    $(".ham").click(function (e) {
+        e.preventDefault();
         $(this).toggleClass("active")
     });
 
@@ -27,8 +29,9 @@ $(function () {
         // },
     })
 
-    $('.close-popUp').click(function () {
+    $('.close-popUp').click(function (e) {
         console.log('click');
+        e.preventDefault();
         $('div').remove('.popUp');
     })
 
