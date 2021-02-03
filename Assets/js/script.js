@@ -34,13 +34,20 @@ $(function () {
         // },
     })
 
+    console.log($('header').offset().top)
+
     $('.close-popUp').click(function (e) {
         console.log('click');
         e.preventDefault();
         $('div').remove('.popUp');
     })
 
-
+    $('a.side-remote').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 1000);
+    })
 
 
     $('.x').on('click', function () {
