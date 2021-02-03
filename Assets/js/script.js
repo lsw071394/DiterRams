@@ -34,7 +34,6 @@ $(function () {
         // },
     })
 
-    console.log($('header').offset().top)
 
     $('.close-popUp').click(function (e) {
         console.log('click');
@@ -46,7 +45,7 @@ $(function () {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
-        }, 1000);
+        }, 600);
     })
 
 
@@ -60,6 +59,19 @@ $(function () {
         });
 
     });
+
+    var sc = window.scrollY;
+
+
+
+    $(window).scroll(function () {
+        var sc = $(document).scrollTop();
+        console.log(sc);
+        if (sc < 210) {
+            $('.side-remote').hide(500);
+        } else { $('.side-remote').show(500) }
+    })
+
 
 
     var startX, startY, endX, endY;
@@ -80,3 +92,5 @@ $(function () {
     });
 
 });
+
+
