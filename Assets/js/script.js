@@ -3,15 +3,12 @@ window.addEventListener('load', function (e) {
 
     setTimeout(scrollTo, 0, 0, 1);
 }, false);
-//
-
 
 $(function () {
     console.log('jQuery Load')
-
-
     // 광고창 사라지기전 body 리셋값
     $('body').css({ 'touch-action': 'none', 'overflow': 'hidden', 'background-color': '#141414' });
+
     // 광고창 닫기 버튼
     $('.x').on('click', function () {
         console.log('click');
@@ -21,6 +18,7 @@ $(function () {
             $('header').css({ 'position': 'fixed' })
         });
     });
+
     // 광고창 닫기 슬라이드 모션 (아래에서 위로)
     var startX, startY, endX, endY;
     $(".shinhan-ad").on('touchstart', function (event) {
@@ -50,25 +48,21 @@ $(function () {
         console.log('click');
         e.preventDefault();
         $('div').remove('.popUp');
-    })
-
+    });
 
     // 메인 슬라이더
     var mySwiper = new Swiper('div.gnb > .swiper-container', {
         direction: 'horizontal',
         loop: false,
         slidesPerView: 'auto',
-    })
+    });
 
     // 카드 슬라이더
     var goodSwiper = new Swiper('.card-area .swiper-container', {
         direction: 'horizontal',
         loop: false,
         slidesPerView: 'auto',
-    })
-
-
-
+    });
 
     // 사이드 리모트 show/hide
     var sc = window.scrollY;
