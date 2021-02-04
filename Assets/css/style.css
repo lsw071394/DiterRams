@@ -9,7 +9,7 @@ background-size: 100%;  background-repeat: no-repeat; */
 -webkit-animation: visibling 1.5s infinite linear;}
 .shinhan-ad > .scroll-img img{width: 100%;}
 
-@-webkit-keyframes visibling{0%{opacity: 0;} 50%{opacity: 1;} 100%{opacity: 0;}}
+@-webkit-keyframes visibling{0%{opacity: 0;} 80%{opacity: 1;} 100%{opacity: 0;}}
 
 .shinhan-ad .play-wrap{position: absolute; bottom: 25%; right: 0;
     transform: translate(-50%,-50%); display: flex; align-items: center;}
@@ -203,6 +203,8 @@ footer .viewPC h2{font-weight: 700; text-align: center; line-height: 66px;}
 /* ---------------------------------------- */
 /* 데스크탑? */
 @media (min-width: 1680px){
+    .shinhan-ad > img{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 50%;}
+    .shinhan-ad > .scroll-img{display: none;}
     .title-wrap{float: left;}
     .title-wrap > .title-line{width: 50px; height: 4px;margin-top: 40px;}
     .title-wrap > h2{padding: 28px 0 30px 0; font-size: 28px; font-weight: 700;}

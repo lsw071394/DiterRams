@@ -72,6 +72,7 @@ $(function () {
         slidesPerView: 'auto',
     });
 
+
     // 카드 슬라이더
     var goodSwiper = new Swiper('.card-area .swiper-container', {
         direction: 'horizontal',
